@@ -4,6 +4,9 @@
     // .test();
     border-bottom: 1px dashed @silver;
     padding: 20px 0;
+    @media @mobile {
+      padding: 10px 2em;
+    }
     h2 {
       padding: 20px 0;
     }
@@ -14,17 +17,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    // .test();
+    @media @mobile {
+      .mobile-layout();
+    }
    
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .mobile-layout();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .mobile-layout();
+      }
 
       img {
         border-radius: 10px;
@@ -35,15 +46,30 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      .mobile-layout();
+      .img-content {
+        order: 1;
+      }
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        .mobile-layout();
+        padding-top: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile {
+        .mobile-layout();
+        padding-bottom: 20px;
+        // .test();
+      }
     }
   }
 
