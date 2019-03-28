@@ -6,7 +6,11 @@
     align-items: center;
     padding: 25px 0;
     width: 100%;
-    // .test();
+    .test();
+    @media @mobile {
+        flex-direction: column;
+        padding: 10px 0;
+    }
     h1 {
         font-color: @shark;
     }
@@ -15,6 +19,10 @@
         justify-content: space-between;
         width: 50%;
         padding: 0  4rem;
+        @media @mobile {
+            width: 100%;
+            padding: 10px 4rem;
+        }
         a {
             font-size: 1.5rem;
             font-color: @shark;
