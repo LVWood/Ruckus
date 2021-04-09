@@ -171,9 +171,6 @@ body p {
 }
 html .page-container,
 body .page-container {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: #605757;
 }
 .header-nav {
@@ -263,4 +260,28 @@ button {
 .about-container .secondlogo {
   max-width: 30%;
   padding: 20px 0;
+}
+.tile-container {
+  top: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile {
+  width: 150px;
+  border: 1px solid #F0F0F0;
+  margin: 50px 20px;
+  padding: 20px;
+}
+.tile-link {
+  margin: auto;
+  text-align: center;
+  color: #F0F0F0;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+.tile:hover {
+  background-color: #a29999;
 }
